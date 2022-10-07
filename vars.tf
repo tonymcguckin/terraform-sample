@@ -1,6 +1,10 @@
-# Configure these variables
 
-variable "name" {
-  description = "The name to pass to the template."
-  default     = "world"
+variable "username" {
+  default = "Joe Soap"
+}
+
+variable "password" {
+  sensitive = true
+  type      = string
+  default   = "0123456789"
 }

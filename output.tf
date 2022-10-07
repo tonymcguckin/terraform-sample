@@ -1,3 +1,8 @@
-output "template_file" {
-    value = data.template_file.test.rendered
+output "username" {
+    value = data.template_file.username.rendered
+}
+
+output "password" {
+    value = data.template_file.password.rendered
+    sensitive = true
 }
