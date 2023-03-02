@@ -1,13 +1,13 @@
 
 variable "username" {
   type = string
-  default = "USERNAME"
+  default = "Joe Soap"
 }
 
 variable "ibmcloud_api_key" {
   sensitive = true
   type = string
-  default = "REDACTED"
+  default = "__NOT_SET__"
 }
 
 variable "resource_group" {
