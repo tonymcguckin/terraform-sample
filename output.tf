@@ -7,6 +7,11 @@ output "ibmcloud_api_key" {
     sensitive = true
 }
 
+output "slack_webhook" {
+    value = data.template_file.slack_webhook.rendered
+    sensitive = true
+}
+
 output "resource_group" {
     value = data.template_file.resource_group.rendered
 }
